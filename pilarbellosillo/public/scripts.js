@@ -1,10 +1,20 @@
 window.onscroll = function() {funcProg()};
 
 var navbar, titulo;
+var nav_top, nav_info, nav_2, nav_3;
+var nav_items, part_items;
 var stickyN, stickyT;
 document.addEventListener('DOMContentLoaded', function(){
 	navbar = document.getElementById("navbar");
 	titulo = document.getElementById("titulo");
+
+	nav_top = document.getElementById("n_top")
+	nav_info = document.getElementById("n_info")
+	nav_2 = document.getElementById("n_pt2")
+	nav_3 = document.getElementById("n_pt3")
+	nav_items = [nav_top, nav_info, nav_2, nav_3]
+	part_items = [document.getElementById("top"),document.getElementById("vida"),document.getElementById("vida2"),document.getElementById("vida3")]
+
 	stickyN = navbar.offsetTop;
 	stickyT = titulo.offsetTop;
 })
@@ -29,4 +39,12 @@ function funcProg() {
 	console.log("Offset: " + pageYOffset)
 	console.log("stN: " +stickyN)
 	console.log("stT: " +stickyT)
+	part_items.forEach(element => {
+		if(pageYOffset >= element.offsetTop){
+			nav_items.forEach(nava => {
+				nava.classList.remove("actual")
+			});
+			nav_items[part_items.indexOf(element)].classList.add("actual")
+		}
+	});
 }
