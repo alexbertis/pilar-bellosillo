@@ -69,7 +69,11 @@
   }
   .actual{
     background: white;
-    color: #1e6cc5
+    color: #1e6cc5 !important
+  }
+  .actual:hover{
+    background: rgb(139, 163, 206) !important;
+    color: #1e6cc5 !important
   }
   #navbar a:hover{
     background: rgb(31, 106, 192);
