@@ -21,7 +21,7 @@
     text-align: start;
     padding-left: 10%;
     top: 50%;
-    bottom: 50%;
+    user-select: none;
     position: relative;
   }
   #navbar {
@@ -102,6 +102,15 @@
     padding: 10px 0;
     font-family: Raleway, Arial, Helvetica, sans-serif
   }
+  h4{
+    font-size: 30px;
+    padding: 10px 0;
+    font-family: Raleway, Arial, Helvetica, sans-serif
+  }
+  #vida{
+    padding: 0 20%
+  }
+  
   h5{
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 18px;
