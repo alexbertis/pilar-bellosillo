@@ -26,26 +26,17 @@
 }
 #navbar {
   background-color: #1e6cc5;
-  overflow: hidden;
-  -moz-box-shadow: 0;
-  -webkit-box-shadow: 0;
-  box-shadow: 0;
-  z-index: 10;
-  width: 100vw;
-  height: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0; right: 0;
+  overflow-x: hidden;
   padding: 20px 0;
   justify-content: center;
   transition: all 275ms ease, position 0ms;
-}
-.sticky {
-  position: fixed;
-  top: 0;
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-.sticky + .main {
-  padding-top: 90px;
 }
 #navbar *{
   vertical-align: middle;
@@ -113,17 +104,6 @@ footer {
 .cronoR * {
   justify-content: start;
   text-align: start
-}
-
-.vl {
-  border-left: 6px solid green;
-  position: relative;
-  left: 50%;
-  margin-left: -3px;
-  top: 0;
-  grid-column: 2;
-  grid-row-start: 1;
-  grid-row-end: 4
 }
 
 .circulo100 {
