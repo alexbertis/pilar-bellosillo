@@ -112,7 +112,7 @@ footer {
 
 .crono {
   display: grid;
-  grid-auto-columns: 45% 10% 45%;
+  grid-auto-columns: 45% 120px 45%;
   width: 100%
 }
 
@@ -140,10 +140,10 @@ footer {
 }
 
 .circulo100 {
-  margin: 10px;
-  height: 80%;
-  width: 80%;
-  border-radius: 80%;
+  margin: 20px;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
   background-color: #1e6cc5
 }
 
