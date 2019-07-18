@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  overflow-x: hidden;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -109,6 +108,48 @@ footer {
   background: #609fe7
 }
 
+.main a{
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  padding: 10px 20px !important;
+  display: inline-flex;
+  vertical-align: middle;
+  color: white;
+  box-shadow:0px 0px 0px 3px white inset;
+  line-height: normal;
+  font-size:20px;	
+	-webkit-transition:all 350ms ease;
+	transition:all 350ms ease;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+  user-select: none;
+}
+.centro > i {
+  padding-left: 10px;
+}
+.centro i {
+  padding: 0;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+.main a.opuesto, .main a.opuesto *{
+  color: rgb(16, 90, 201);
+}
+.main a.opuesto{
+  box-shadow:0px 0px 0px 3px rgb(16, 90, 201) inset;
+}
+.main a.opuesto:hover {
+	background:rgb(16, 90, 201) ;
+	color: white ;
+}
+.main a.opuesto:hover *{
+	color: white ;
+}
+
+.masinfo {
+  width: 90%;
+  margin: 16px 0;
+  justify-content: center !important;
+}
 
 .crono {
   display: grid;
@@ -116,18 +157,27 @@ footer {
   width: 100%
 }
 
+.crono h3 {
+  font-size: 30px;
+  font-family: Lato, Arial, Helvetica, sans-serif
+}
+
 .cronoT {
   grid-column-start: 1;
   grid-column-end: 4
 }
 .cronoL {
-  grid-column: 1
+  grid-column: 1;
+  border-top: 1px solid #1e6cc5;
+  border-bottom: 1px solid #1e6cc5;
 }
 .cronoC {
   grid-column: 2
 }
 .cronoR {
-  grid-column: 3
+  grid-column: 3;
+  border-top: 1px solid #1e6cc5;
+  border-bottom: 1px solid #1e6cc5;
 }
 
 .cronoL * {
@@ -147,6 +197,14 @@ footer {
   background-color: #1e6cc5
 }
 
+.showhide {
+  transition: max-height 0.4s ease-in-out; 
+  max-height: 0px; 
+  margin-top: 6px;
+  padding-left: 20px; 
+  overflow: hidden;
+}
+
 .unselectable{
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -154,10 +212,6 @@ footer {
 }
 .main{
   z-index: 1;
-}
-.grid2col{
-  display: grid;
-  grid-auto-columns: 50% 50%;
 }
 
 h2, span {
@@ -170,7 +224,7 @@ h2, span {
 h3{
   font-size: 40px;
   padding: 10px 0;
-  font-family: Raleway, Arial, Helvetica, sans-serif
+  font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 h4{
   font-size: 30px;
@@ -178,7 +232,7 @@ h4{
   font-family: Raleway, Arial, Helvetica, sans-serif
 }
 #vida{
-  padding: 0 20%
+  padding: 0 14%
 }
 
 h5{
@@ -325,9 +379,33 @@ input[type=submit]:active{
     font-size: 2vh;
     line-height: 2vh;
   }
-  #app-smc > div{
-    padding: 40px 20px; 
-    grid-gap: 20px
+  .crono {
+    display: grid;
+    grid-auto-columns: 120px auto;
+    width: 100%
+  }
+  
+  .cronoT {
+    grid-column-start: 1;
+    grid-column-end: 3
+  }
+  .cronoL {
+    grid-column: 2
+  }
+  .cronoC {
+    grid-column: 1
+  }
+  .cronoR {
+    grid-column: 2
+  }
+  
+  .cronoL * {
+    justify-content: start;
+    text-align: start
+  } 
+  .cronoR * {
+    justify-content: start;
+    text-align: start
   }
   p{
     font-size: 2vh
