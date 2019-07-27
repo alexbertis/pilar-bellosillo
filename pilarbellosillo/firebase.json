@@ -5,6 +5,12 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/acg",
+        "destination": "/html/accioncatolica.html"
+      }
     ]
   }
 }
