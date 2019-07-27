@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function(){
 	nav_top = document.getElementById("n_top")
 	nav_info = document.getElementById("n_info")
 	nav_2 = document.getElementById("n_pt2")
-	nav_3 = document.getElementById("n_pt3")
+	nav_3 = document.getElementById("n_cont")
 	nav_items = [nav_top, nav_info, nav_2, nav_3]
-	part_items = [document.getElementById("top"),document.getElementById("vida"),document.getElementById("vida2"),document.getElementById("vida3")]
+	part_items = [document.getElementById("top"),document.getElementById("vida"),document.getElementById("etapaInter"),document.getElementById("contacto")]
 
 
 	var btn = document.getElementById("btInfoPlanesAC")
