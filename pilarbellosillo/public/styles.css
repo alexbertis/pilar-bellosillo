@@ -164,20 +164,36 @@ footer {
 
 .cronoT {
   grid-column-start: 1;
-  grid-column-end: 4
+  grid-column-end: 4;
+  border-top: 5px solid #8a9af7;
+  border-bottom: 5px solid #8a9af7;
+}
+.cronoT.up {
+  border-top: none
+}
+.cronoT.down {
+  border-bottom: none
+}
+.cronoT .texto {
+  font-size: 20px; 
+  padding: 0 15% 10px;
 }
 .cronoL {
   grid-column: 1;
-  border-top: 1px solid #1e6cc5;
-  border-bottom: 1px solid #1e6cc5;
+  padding: 20px 10px;
+  margin: 10px 0;
+  border-top: 2px solid #1e6cc5;
+  border-bottom: 2px solid #1e6cc5;
 }
 .cronoC {
   grid-column: 2
 }
 .cronoR {
   grid-column: 3;
-  border-top: 1px solid #1e6cc5;
-  border-bottom: 1px solid #1e6cc5;
+  padding: 20px 10px;
+  margin: 10px 0;
+  border-top: 2px solid #1e6cc5;
+  border-bottom: 2px solid #1e6cc5;
 }
 
 .cronoL * {
@@ -190,11 +206,10 @@ footer {
 }
 
 .circulo100 {
-  margin: 20px;
-  height: 80px;
-  width: 80px;
-  border-radius: 40px;
-  background-color: #1e6cc5
+  height: 100%;
+  width: 100%;
+  background-image: url(img/puntos-historia.svg);
+  background-position: center;
 }
 
 .showhide {
