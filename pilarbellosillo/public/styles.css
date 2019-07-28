@@ -262,6 +262,10 @@ h4{
   padding: 10px 0;
   font-family: Raleway, Arial, Helvetica, sans-serif
 }
+h4.titparte{
+  font-size: 40px
+}
+
 #vida{
   padding: 0 14%
 }
@@ -408,24 +412,41 @@ input[type=submit]:active{
     align-self: center;
     text-align: center;
     margin: 0.3vh;
-    font-size: 2vh;
-    line-height: 2vh;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 6px 14px !important;
+  }
+  #vida{
+    padding: 0
   }
   .crono {
     display: grid;
-    grid-auto-columns: 120px auto;
+    grid-auto-columns: 15% auto;
     width: 100%
   }
-  
+  .crono h3 {
+    font-size: x-large;
+    padding: 0;
+    padding-bottom: 10px
+  }
+  .cronoT .texto {
+    font-size: large;
+    padding: 0;
+  }
+  .cronoT * {
+    text-align: initial
+  }
   .cronoT {
     grid-column-start: 1;
-    grid-column-end: 3
+    grid-column-end: 3;
+    padding: 10px 5%;
   }
   .cronoL {
     grid-column: 2
   }
   .cronoC {
-    grid-column: 1
+    grid-column: 1;
+    background-size: cover
   }
   .cronoR {
     grid-column: 2
@@ -443,10 +464,42 @@ input[type=submit]:active{
     text-align: start
   }
   p{
-    font-size: 2vh
+    font-size: medium
   }
   .main p br{
     display: none;
   }
+  .main a{
+    padding: 10px 6px !important
+  }
+  #ladefine{
+    padding: 20px 5%
+  }
+  #ladefine p{
+    text-align: initial
+  }
 
+  form{
+    width: 90%
+  }
+  input:not([type=submit]), textarea{
+    min-width: 100%;
+    box-sizing: border-box;
+    min-height: 46px;
+    max-width: 100%;
+    margin: 6px 0;
+  }
+  #portada h2{
+    font-size: 50px;
+  }
+  h2, span {
+    font-size: xx-large;
+  }
+  #vida h4.titparte{
+    padding: 10px 5%
+  }
+  h4.titparte{
+    font-size: xx-large;
+    text-align: initial
+  }
 }

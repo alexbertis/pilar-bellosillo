@@ -1,6 +1,6 @@
 window.onscroll = function() {funcProg()};
 
-var nav_top, nav_info, nav_2, nav_3;
+var nav_top, nav_info, nav_2, nav_3, nav_4;
 var nav_items, part_items;
 
 
@@ -8,10 +8,11 @@ var nav_items, part_items;
 document.addEventListener('DOMContentLoaded', function(){
 	nav_top = document.getElementById("n_top")
 	nav_info = document.getElementById("n_info")
-	nav_2 = document.getElementById("n_pt2")
-	nav_3 = document.getElementById("n_cont")
-	nav_items = [nav_top, nav_info, nav_2, nav_3]
-	part_items = [document.getElementById("top"),document.getElementById("vida"),document.getElementById("etapaInter"),document.getElementById("contacto")]
+	nav_2 = document.getElementById("n_umofc")
+	nav_3 = document.getElementById("n_define")
+	nav_4 = document.getElementById("n_cont")
+	nav_items = [nav_top, nav_info, nav_2, nav_3, nav_4]
+	part_items = [document.getElementById("top"),document.getElementById("vida"),document.getElementById("etapaInter"),document.getElementById("ladefine"),document.getElementById("contacto")]
 
 
 	var btn = document.getElementById("btInfoPlanesAC")
