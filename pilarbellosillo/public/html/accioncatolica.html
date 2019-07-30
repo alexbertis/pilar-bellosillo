@@ -4,9 +4,41 @@
     <title>Pilar Bellosillo</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="../">
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            nav_top = document.getElementById("n_top")
+            nav_info = document.getElementById("n_info")
+            nav_2 = document.getElementById("n_umofc")
+            nav_3 = document.getElementById("n_define")
+            nav_4 = document.getElementById("n_cont")
+            nav_items = [nav_top, nav_info, nav_2, nav_3, nav_4]
+            part_items = [document.getElementById("top"),document.getElementById("vida"),document.getElementById("etapaInter"),document.getElementById("ladefine"),document.getElementById("contacto")]
+        
+        
+            var btn = document.getElementById("btInfoPlanesAC")
+            var sh = document.getElementById("sh")
+            var flechaaarriba = document.createElement("i")
+            flechaaarriba.className = "material-icons"
+            flechaaarriba.innerText = "expand_less"
+            var flechaaabajo = document.createElement("i")
+            flechaaabajo.className = "material-icons"
+            flechaaabajo.innerText = "expand_more"
+            btn.onclick = function() {
+                if(sh.style.maxHeight == "0px"){
+                    sh.style.maxHeight = "800px";
+                    btn.text = "Menos información"
+                    btn.appendChild(flechaaarriba)
+                }else{
+                    sh.style.maxHeight = "0px";
+                    btn.text = "Ver los planes destacados"
+                    btn.appendChild(flechaaabajo)
+                } 
+            }
+            
+        })
+    </script>
+    <script src="../scripts.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Source+Sans+Pro|Open+Sans|Raleway|Roboto|Roboto+Mono|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -19,7 +51,7 @@
         </svg>
     </div>
     <div id="navbar">
-        <a id="n_top" href="#top">Inicio</a>
+        <a id="n_top" href="#portada">Inicio</a>
         <a id="n_info" href="#vidaPre">Su vida</a>
         <a id="n_pt2" href="#etapaInter">Con UMOFC</a>
         <a id="n_cont" href="#contacto">Contacto</a>

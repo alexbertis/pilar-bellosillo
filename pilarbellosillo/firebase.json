@@ -10,6 +10,12 @@
       {
         "source": "/acg",
         "destination": "/html/accioncatolica.html"
+      },{
+        "source": "/testimonios",
+        "destination": "/html/testimonio.html"
+      },{
+        "source": "/concilio",
+        "destination": "/html/concilio.html"
       }
     ]
   }

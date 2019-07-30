@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#portada{
+  background-image: url(img/pilar_bellosillo.jpg);
+  background-size: cover;
+  background-position-y: top;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+#portada h2{
+  color: white;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  text-align: start;
+  padding-left: 10%;
+  top: 50%;
+  user-select: none;
+  position: relative;
+}
+.arrows {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+	bottom: 20px;
+}
+
+.arrows path {
+  stroke: #ffffff;
+  fill: transparent;
+  stroke-width: 3px;	
+  animation: arrow 1.5s infinite;
+  -webkit-animation: arrow 1.5s infinite; 
+}
+
+@keyframes arrow {
+  0% {opacity:0; transform:translateY(10px)}
+  80% {opacity:1; transform:translateY(50px)}
+  100% {opacity:0; transform:translateY(50px)}
+}
+
+@-webkit-keyframes arrow {
+  0% {opacity:0; transform:translateY(10px)}
+  80% {opacity:1; transform:translateY(50px)}
+  100% {opacity:0; transform:translateY(50px)}
+}
+.arrows path.a1 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; /* Safari and Chrome */
+}
+
+.textoCentrado {
+  text-align: center;
+}
+#navbar {
+  background-color: #1e6cc5;
+  position: -webkit-sticky;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  left: 0; right: 0;
+  overflow-x: hidden;
+  padding: 20px 0;
+  justify-content: center;
+  transition: all 275ms ease, position 0ms;
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#navbar *{
+  vertical-align: middle;
+}
+#navbar a{
+  display:inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  top: 50%;
+  color:white;
+  text-decoration:none;
+  padding: 10px 20px !important;
+  font-size:20px;	
+  font-family: Lato, Helvetica, sans-serif;
+  -webkit-transition:all 350ms ease;
+  transition:all 350ms ease;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.actual{
+  background: white;
+  color: #1e6cc5 !important
+}
+.actual:hover{
+  background: rgb(139, 163, 206) !important;
+  color: #1e6cc5 !important
+}
+#navbar a:hover{
+  background: rgb(31, 106, 192);
+  box-shadow:0px 0px 0px 3px white inset;
+}
+
+footer {
+  padding: 40px;
+  background: #609fe7
+}
+
+.main a:not(p a){
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  padding: 10px 20px !important;
+  display: inline-flex;
+  vertical-align: middle;
+  color: white;
+  box-shadow:0px 0px 0px 3px white inset;
+  line-height: normal;
+  font-size:20px;	
+	-webkit-transition:all 350ms ease;
+	transition:all 350ms ease;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+  user-select: none;
+}
+p a {
+  text-decoration: none
+}
+q {
+  font-style: italic;
+}
+
+.unselectable{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+h2, span {
+  font-size: 70px;
+  height: auto;
+  font-weight: normal;
+  font-family: Futura, Arial, Helvetica, sans-serif;
+  text-align: center
+}
+h3{
+  font-size: 40px;
+  padding: 10px 0;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+h4{
+  font-size: 30px;
+  padding: 10px 0;
+  font-family: Raleway, Arial, Helvetica, sans-serif
+}
+h4.titparte{
+  font-size: 40px
+}
+
+#vida{
+  padding: 0 14%
+}
+
+h5{
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 6px;
+  text-transform: uppercase;
+}
+p{
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 3px
+}
+.btnplano{
+  color:#fff;
+  text-decoration:none;
+  padding: 10px 20px !important;
+  font-size:20px;	
+  font-family: Lato, Helvetica, sans-serif;
+  -webkit-transition:all 350ms ease;
+  transition:all 350ms ease;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.btnplano:hover{
+  background:#fff;
+  border-radius:25px;
+  color: rgb(31, 106, 192);
+}
+
+.icono{
+  transition: all 275ms ease;
+  width:30px;
+  height:30px;
+  padding:10px;
+  background: transparent;
+  fill: gray;
+}
+.white{
+  fill: white
+}
+.material-icons{
+  color: white;
+}
+.icono:hover{border-radius: 25px; fill: white}
+.red:hover{background-color:red;}
+.green:hover{background-color:green}
+.skyblue:hover{background-color:deepskyblue;}
+.sosoblue:hover{background-color:steelblue;}
+.black:hover{background-color:black;}
+.orange:hover{background-color:orange;}
+.white:hover{background-color: white;  fill: rgb(0, 105, 224) !important;}
+
+#cometa {
+  padding: 0 20%
+}
+#notascometa {
+  padding: 100px 40px
+}
+
+footer {
+  text-align: center
+}
+
+@media screen and (max-width:1150px), (pointer:coarse){
+  header {
+    padding: 10px;
+  }
+  #cometa, #notascometa {
+    padding: 0 4%
+  }
+  
+  #navbar a{
+    align-self: center;
+    text-align: center;
+    margin: 0.3vh;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 6px 14px !important;
+  }
+  p{
+    font-size: medium
+  }
+  .main p br{
+    display: none;
+  }
+  .main a{
+    padding: 10px 6px !important
+  }
+  #portada h2{
+    font-size: 50px;
+  }
+  h2, span {
+    font-size: xx-large;
+  }
+  #vida h4.titparte{
+    padding: 10px 5%
+  }
+  h4.titparte{
+    font-size: xx-large;
+    text-align: initial
+  }
+}
