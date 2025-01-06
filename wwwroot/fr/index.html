@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Pilar Bellosillo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <script>
+            var nav_top, nav_info, nav_2, nav_3, nav_4;
+            document.addEventListener('DOMContentLoaded', function(){
+            nav_top = document.getElementById("n_top")
+            nav_info = document.getElementById("n_info")
+            nav_2 = document.getElementById("n_umofc")
+            nav_3 = document.getElementById("n_define")
+            nav_4 = document.getElementById("n_cont")
+            nav_items = [nav_top, nav_info, nav_2, nav_3, nav_4]
+            part_items = [document.getElementById("top"),document.getElementById("vida"),document.getElementById("etapaInter"),document.getElementById("ladefine"),document.getElementById("contacto")]
+        
+        
+            var btn = document.getElementById("btInfoPlanesAC")
+            var sh = document.getElementById("sh")
+            var flechaaarriba = document.createElement("i")
+            flechaaarriba.className = "material-icons"
+            flechaaarriba.innerText = "expand_less"
+            var flechaaabajo = document.createElement("i")
+            flechaaabajo.className = "material-icons"
+            flechaaabajo.innerText = "expand_more"
+            btn.onclick = function() {
+                if(sh.style.maxHeight == "0px"){
+                    sh.style.maxHeight = "800px";
+                    btn.text = "Moins d'information"
+                    btn.appendChild(flechaaarriba)
+                }else{
+                    sh.style.maxHeight = "0px";
+                    btn.text = "Voir les projets mis en Avant"
+                    btn.appendChild(flechaaabajo)
+                } 
+            }
+            
+        })
+    </script>
+    <script src="/scripts.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Source+Sans+Pro|Open+Sans|Raleway|Roboto|Roboto+Mono|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body style="overflow-x: unset">
+    <div id="top" style="height: 0;display: none"></div>
+    <div id="portada">
+        <h2 id="titulo">Pilar Bellosillo</h2>
+        <svg class="arrows">
+            <path stroke-linecap="round" class="a1" d="M0 0 L30 33 L60 0"></path>
+        </svg>
+    </div>
+    <div id="navbar">
+        <a id="n_top" href="#portada">Accueil</a>
+        <a id="n_info" href="#vidaPre">Sa vie</a>
+        <a id="n_umofc" href="#etapaInter">Avec UMOFC</a>
+        <a id="n_define" href="#ladefine">Ce que la définit</a>
+        <a id="n_cont" href="#contacto">Contactez-nous</a>
+        <a href="/fr/temoignages">Témoignages</a>
+        <a href="https://blog.pilarbellosillo.es">Blog</a>
+    </div>
+    <div class="main">
+        <div id="vidaPre" style="height: 100px;"></div>
+        <div id="vida" class="ancho-centrado">
+            <h4 class="titparte">LA VIE DE PILAR BELLOSILLO</h4>
+            <div class="crono" >
+                <div class="cronoT up" id="comienzosAC" style="grid-row: 1">
+                    <h3>22 décembre 1913</h3>
+                    <p style="font-size: 25px">Pilar Bellosillo García-Verde est née à Madrid</p>
+                    <p class="texto">
+                        Issue d'une famille profondément chrétienne, elle était la deuxième de huit enfants et gardait le souvenir des 
+                        réunions de famille dans la maison des grands-parents à Derroñadas (Soria), où l'entreprise familiale et la 
+                        rencontre avec la nature marquèrent sa vie. Dans cet environnement également, elle mûrissait sa foi chrétienne, 
+                        dont elle a témoigné par sa vie dans d'innombrables écrits.
+                    </p>
+                </div>
+                <div class="cronoL" style="grid-row: 2">
+                    <h3>Parcours universitaire</h3>
+                    <p>Pilar a étudié la pédagogie à l'Académie Veritas de l'Institution thérésienne (1931-1935). 
+                    C'est là qu'elle a rencontré le père Poveda. Elle y a reçu une formation humaine et 
+                    chrétienne qui a été décisive dans sa vie.<br><br>
+                        Elle a également étudié le travail social à l'École de la famille et de la formation sociale.
+                    </p>
+                </div>
+                <div class="cronoC circulo100"  style="grid-row: 2"></div>
+                <div class="cronoC circulo100"  style="grid-row: 3"></div>
+                <div class="cronoR"  style="grid-row: 3">
+                    <h3>Ses débuts avec l'Action catholique</h3>
+                    <p>Pilar a commencé à travailler comme bénévole à l'Académie pour les femmes ouvrières gérée par l'Action catholique. 
+                    En 1938, en pleine guerre civile, elle suit à Saragosse un cours pour animateurs de jeunesse. Ce cours a marqué 
+                    profondément son destin, car dès lors elle s'engage définitivement dans l'Action catholique, où elle occupera des 
+                    fonctions nationales sans interruption.
+                    <br><br>
+                    Sa famille s'était installée à Madrid où elle a vécu, sauf pendant de longues périodes où elle a dû vivre 
+                    à Paris ou à Rome en raison de ses obligations internationales.
+                    </p>
+                </div>
+                <div class="cronoL" style="grid-row: 4">
+                    <h3>Engagée avec l'Action Catholique</h3>
+                    <p>Elle s'est engagée très jeune dans l'Action Catholique <q>dont la spiritualité était nourrie très tôt par 
+                    des sources très riches: l'Evangile, les mystiques castillans, Thérèse de Jésus, Jean de la Croix...</q>
+						<br><br>
+                        Elle fut rapidement élue présidente nationale des Jeunes Femmes de l'Action Catholique (1940-1946) 
+                        et plus tard, elle fut présidente nationale de sa branche féminine (1951-1963).
+						<br><br>
+                        Pendant ses présidences, ce furent les années les plus actives et les plus fructueuses de l'Action Catholique. 
+                        Elle s'était entourée de bonnes équipes et au cours de ces années, les plans suivants ont été créés :
+                    </p>
+                    
+                    <div class="showhide" id="sh" style="max-height: 0px;">
+                        <ul>
+                            <li><p>Le Plan de formation de la personnalité de la Femme (1953-1957), pour apporter une solution à la 
+                            situation des femmes. Pilar a également mis en place les Centres de culture populaire, dont la nouveauté 
+                            et le rôle moteur ont été de fournir aux femmes des centres où elles pouvaient être éduquées et formées à 
+                            la vie sociale, culturelle, civique, politique et religieuse. L'objectif était de fournir une formation 
+                            intégrale.
+                            </p></li>
+                            <li><p>Une autre grande action promue par Pilar a été la Semaine dite de l'Impact, un bref cours de formation 
+                            sociale qui a totalement renouvelé les femmes de l'Action Catholique (1958).
+                            </p></li>
+                            <li><p>La troisième grande action catholique a été de lancer pour la première fois la Campagne contre la faim, 
+                            aujourd'hui Manos Unidas, qui était un pari sur le Tiers Monde. Les campagnes ont été menées avec une telle 
+                            rigueur, un tel dévouement et une telle transparence qu'elles ont rapidement eu de grandes répercussions dans 
+                            la société espagnole (1960).
+                            </p></li>
+                        </ul>
+                        <p>Ces trois actions ont laissé une marque profonde dans toute l'Espagne.
+                        </p>
+                    </div>
+                    <a id="btInfoPlanesAC" class="opuesto centro masinfo">
+                        Voir les projets mis en Avant
+                        <i class="material-icons">expand_more</i>
+                    </a>
+                </div>
+                <div class="cronoC circulo100"  style="grid-row: 4"></div>
+                <div class="cronoR im"  style="grid-row: 4; background-image: url(/img/pb_web.jpg)"></div>
+
+                <div class="cronoT" id="etapaInter" style="grid-row: 5">
+                    <h3>Sur la scène internationale: Présidente de l'UMOFC</h3>
+                    <p class="texto">
+                        Grâce à ses engagements et à son expérience en Espagne, Pilar Bellosillo s'est lancée dans la vie internationale.
+                        En 1961 elle a été élue présidente de l'Union mondiale des organisations féminines catholiques (UMOFC), 
+                        poste qu'elle a occupé jusqu'en 1974. À cette époque, l'UMOFC comptait 36 millions de membres, 36 millions de 
+                        femmes catholiques dans 61 pays sur les cinq continents.
+                    </p>
+                </div>
+                <div class="cronoL im"  style="grid-row: 6; background-image: url(/img/UMOFC2.svg); background-size: contain; background-repeat: no-repeat;"></div>	
+                <div class="cronoC circulo100"  style="grid-row: 6"></div>
+				<div class="cronoR" style="grid-row: 6">
+                    <h3>Pour la liberté des femmes</h3>
+                    <p>Ce fut un moment historique caractérisé par le début de la prise de conscience par les femmes de leur situation de 
+                    marginalisation, de discrimination et souvent d'exclusion. C'est ainsi que Pilar le définissait ainsi: <br>
+						<q>
+							Nous, les femmes, sommes les protagonistes de ce moment historique, caractérisé par l'éveil de la conscience 
+							féminine dans le monde (1950-1970). C'est le moment de notre "libération". Et pour cela, quelles possibilités 
+							providentielles nous offre l'UMOFC!
+                        </q>.
+					</p>
+					<p>
+						L'UMOFC répond, avec Pilar à sa tête, à ce défi. Dès la période post-conciliaire, en 1966, une grande enquête sur 
+						"La liberté des femmes dans la famille, la société et l'Église" a été lancée et envoyée à toutes les organisations 
+						membres de l'UMOFC pour que les 36 millions de femmes catholiques membres y répondent.
+					</p>
+					<p>
+						Les réponses ont été d'une grande valeur par leur représentation, en raison du nombre élevé de réponses et de leur 
+						pluralisme: des femmes de toutes les races, de cultures et de coutumes différentes, et de classes sociales et 
+						économiques diverses. "Les réponses - dit Pilar - ont révélé des réalités et des situations surprenantes".
+					</p>
+					<p>
+						Ces faits ont fortement sensibilisé l'UMOFC et de là est né un plan d'action pour faire évoluer ces situations 
+						inhumaines. Des travaux, des colloques, des conférences, des recherches, des réunions d'étude, des consultations 
+						d'experts, etc. ont été lancés.
+					</p>
+					<p>
+						Grâce à ces travaux et recherches, l'UMOFC a établi les lignes de force d'un féminisme humaniste.
+                    </p>
+                </div>
+                <div class="cronoL" style="grid-row: 7">
+                    <h3>“L'éducation des femmes”</h3>
+                    <p>
+						En 1970, Pilar a élaboré et étudié, à l'Assemblée de Torhout (Belgique), avec toutes les organisations, un grand 
+						plan d'éducation comme processus de libération avec le thème <q><b>L'éducation de la femme</b></q> pour les 
+						quatre années suivantes, en choisissant pour cela une méthodologie active et participative, qui donnait aux 
+						femmes la possibilité de contribuer aux questions à traiter avec leurs propres idées, leur vision des sujets 
+						à étudier et leurs propres critères.
+					</p>
+                </div>
+                <div class="cronoC circulo100"  style="grid-row: 7"></div>
+                <div class="cronoC circulo100"  style="grid-row: 8"></div>
+                <div class="cronoR"  style="grid-row: 8">
+                    <h3>Lutter contre l'injustice et la marginalisation</h3>
+                    <p>Un autre engagement que Pilar a personnellement assumé et promu au sein de l'UMOFC a été d'en élargir ses objectifs 
+                    et son action pour les peuples du Tiers Monde, pour les peuples du sous-développement, de la faim, de la pauvreté: 
+                    des peuples qui souffrent de l'injustice, de la marginalisation et qui sont opprimés par les puissants.
+					</p>
+					<p>
+						Une étape importante fut l'organisation de l'Assemblée statutaire et des Journées d'étude en 1974, pour la première 
+						fois en dehors de l'Europe. Elles se sont tenues à Dar Es Salaam (Tanzanie), sur le thème <q>L'UMOFC, agent de 
+						changement pour une société plus juste</q>. Plus de 500 femmes africaines ont participé à cette assemblée, ce qui 
+						a été très enrichissant pour elles et autant, voire plus, pour celles qui venaient de la civilisation occidentale.
+					</p>
+					<p>
+						L'Assemblée suivante s'est tenue à Bangalore (Inde) en 1979 sur le thème <q>Femmes, justice, évangélisation</q>. 
+						Mère Teresa de Calcutta était présente et y a donné une conférence.
+					</p>
+					<p>
+						Jusqu'en 1974, date à laquelle elle a quitté la responsabilité de présidente, Pilar a laissé son empreinte, aidée 
+						par d'autres femmes, dont certaines étaient espagnoles: elle a apporté le dynamisme, la vitalité et un projet de 
+						changement, alors indispensable au service des femmes et de l'UMOFC.
+					</p>
+                </div>
+				<div class="cronoL" style="grid-row: 9">
+                    <h3>Auditrice au Concile Vatican II</h3>
+                    <p>
+						En tant que présidente de l'UMOFC, Pilar a été nommée par le pape Paul VI comme auditrice au Concile Vatican II, 
+						avec 22 autres femmes, membres de la délégation des auditeurs. Parmi eux, Pilar était la seule laïque espagnole. 
+						C'était une première fois dans l'histoire de l'Église. Pilar a rejoint la Commission chargée d'élaborer le 13ème 
+						schéma de la préparation de la Constitution pastorale "Gaudium et spes" qui sera la constitution pastorale sur 
+						l'Eglise dans le monde d'aujourd'hui.
+					</p><p>
+						Pilar Bellosillo raconte comment elle a vécu le Concile : "Je l'ai vécu "vitalement", je me suis lancée dans 
+						l'aventure de suivre l'Esprit, de me laisser conduire par Lui ; pleinement convaincue que pour l'Église c'était 
+						"son heure", et que pour avancer sur le chemin, il fallait aller plus loin. C'était très clair pour moi. Déjà 
+						pendant l'intense activité du Concile, j'ai passé des nuits blanches et j'ai découvert comment “travaillé par 
+						l'Esprit", le flux que nous recevions était ordonné. Cela m'a demandé, parfois, de me dépouiller de quelque chose 
+						pour accueillir le "nouveau". Parfois, il s'agissait de l'ordonner avec une nouvelle hiérarchie de valeurs. 
+						L'étonnement de découvrir la merveilleuse clarté et la cohérence de l'œuvre de Dieu, la lumière, la joie, 
+						l'équilibre, l'ordre, la paix et un amour renouvelé sont indescriptibles ; ce sont les fruits que produit 
+						l'appropriation de la vérité. Il était évident que l'Église était interpellée par un grand nombre de nouvelles 
+						questions qui étaient posées à la conscience des baptisés. Et donner les mêmes réponses ne menait à rien".
+					</p><p>
+						Après la clôture du Concile, il y eut un colloque avec quatre auditrices. Chacune s'est vu poser une question 
+						spécifique. A Pilar on a demandé quelle avait été la contribution de la femme aux travaux du Concile. Pilar a 
+						répondu que sa plus grande préoccupation avait été d'éviter toute discrimination à l'égard des femmes.
+					</p>
+                </div>
+                <div class="cronoC circulo100"  style="grid-row: 9"></div>
+                <div class="cronoR im"  style="grid-row: 9; background-image: url(/img/pb_color.jpg)"></div>
+                <div class="cronoT down" style="grid-row: 10">
+                    <h3>2 janvier 2003</h3>
+                    <p style="font-size: 25px">Pilar Bellosillo décède à Madrid</p>
+                </div>
+            </div>
+        </div>
+        <div id="ladefine">
+            <h4 class="titparte">TELLE ETAIT PILAR</h4> 
+            <p>Pilar disait : "Tout ce que j'ai vécu dans l'Église a été pour moi une source permanente de richesse. Je découvre, étant 
+            très jeune, que ma foi n'est pas un privilège pour moi seule mais une grâce que je dois partager et si je suis dans l'Église, 
+            ce n'est pas seulement pour en bénéficier, mais pour me mettre à son service".
+            </p><p>
+                Pilar était une femme d'Église. Apôtre par engagement. Une laïque chrétienne par vocation. <b>Prophète du 20ème siècle.</b>
+            </p><p>
+                Pilar nous a laissé, par écrit, le moment où elle a pris l'engagement de se consacrer à l'apostolat: «La Guerre Civile a 
+                été une expérience très dure pour ceux d'entre nous qui l'ont vécue. Une fois qu'elle s'est terminée, il y avait beaucoup à 
+                reconstruire ; c'est le moment où je prends l'engagement de me consacrer à l'apostolat. Un engagement qui durera toute ma vie. 
+                C'est le début d'une aventure personnelle et passionnante qui ne s'est pas encore arrêtée.»
+            </p><p>
+                Pilar, dès sa jeunesse, a consacré sa vie et sa passion apostolique à lutter pour la promotion des femmes, pour leur dignité 
+                et surtout pour leur liberté. Son apostolat n'est pas quelque chose de routinier, de superficiel... Elle aime les "autres" 
+                et elle l'exprime ainsi : "Ma grande vocation se dessine progressivement ; ce sera celle d'être au service des autres, au 
+                service de leur épanouissement en tant que personnes et en tant que chrétiens. Être au service des desseins de Dieu dans 
+                le monde... prendre en charge l'histoire de la cause de Dieu. C'est la vocation inédite du chrétien".
+            </p><p>
+                Pilar a vécu sa foi profonde, son dévouement et sa fidélité à l'Église et son amour pour Jésus-Christ à partir de sa condition 
+                de laïque. Elle dit : "Il ne s'agissait pas d'entrer dans un institut religieux, ce n'était pas ma vocation ; mais de vivre 
+                mon baptême, qui est la "source" de cette vie merveilleuse. Par le baptême, je suis entrée dans la famille de Dieu. Rien ne 
+                peut être ajouté à cette "grandeur". Je suis entrée dans son Église. Peu à peu, cette vocation de "chrétien laïc" sera 
+                "éclairée".
+            </p><p>
+                Pilar était prophète car, inspirée par l'Esprit et fortifiée par sa foi, elle a transmis le message de Jésus-Christ et ses 
+                propres expériences religieuses avec spontanéité et conviction. Elle était prophète parce qu'elle était une pionnière, en 
+                avance sur son temps. Et elle était prophète parce qu'elle a apporté à l'Église la conversion, le renouveau et le progrès, 
+                et qu'elle a voulu ouvrir des fenêtres pour que "l'air frais" puisse entrer, comme le disait Jean XXIII.
+            </p><p>
+                Elle déclarait : "Je suis consciente d'avoir fait un long voyage, en allant toujours de l'avant, et je peux identifier 
+                Jésus-Christ dans mon propre "Exode" vers la terre de la liberté, de la dignité et de la justice".
+            </p><p>
+                Pilar était une femme très en avance sur son temps. Tout au long de sa vie, elle a participé activement à la construction 
+                d'un monde meilleur, à la promotion des femmes et au renouveau de l'Église. Elle a été une actrice de changement et de 
+                progrès dans la société et dans l'Église, un modèle à imiter et un exemple à suivre.
+            </p>
+        </div>
+        <div id="contacto">
+            <h2 style="padding: 20px">Contactez-nous</h2>
+            <div style="display: flex; margin-top: 10px">
+                <form action="https://formspree.io/contacto@pilarbellosillo.es" method="POST">
+                    <input type="text" name="name" placeholder="Prénom et nom *" required="">
+                    <input type="email" name="_replyto" placeholder="E-mail *" required="">
+                    <input type="tel" name="telf" placeholder="Numéro de téléphone">                       
+                    <input type="text" name="titulo" placeholder="Titre *" required="">
+                    <textarea name="texto" placeholder="Message *" required=""></textarea>
+                    <input type="text" name="_gotcha" style="display:none">
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+            <p style="font-size: larger; padding: 20px 0">Ou envoyez-nous un email à <a id="mail_contacto" href="mailto:bellosillopilar@gmail.com">bellosillopilar@gmail.com</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>Développé par BrontApps.</p>
+    </footer>
+    <div class="langselect"><a class="others" href="/" lang="es" hreflang="es">Español</a> / <a class="others" href="/en" lang="en" hreflang="en">English</a> / <a class="current" href="#portada">Français</a></div>
+</body>
+</html>

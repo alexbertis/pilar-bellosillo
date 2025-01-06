@@ -1,0 +1,132 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@400;500;600;700&family=Prompt:wght@500;600;700&display=swap" rel="stylesheet">
+    <style media="screen">
+    * {
+        margin: 0; padding: 0; border: 0; font-family: 'Prompt', Arial, Helvetica, sans-serif;
+    }
+    :root {
+        --main-color: #1f67c0
+    }
+
+    body {
+        background: #cbcecf;
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        place-items: center;
+    }
+
+    .center-everything {
+        display: grid;
+        place-items: center;
+    }
+    a {
+        text-decoration: none;
+    }
+
+    #message { 
+        background: white; 
+        box-shadow: 0 1px 20px rgba(0,0,0,0.12);
+        max-width: 720px;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    .head {
+        width:100%;
+        background: var(--main-color);
+        padding-top: 20px;
+        color: white; 
+        overflow: hidden;
+    }
+    img {
+        height: 70px;
+    }
+    h2{
+        font-size: 260px;
+        line-height: 170px;
+        font-weight: 500;
+        position: relative;
+        top: 260px;
+        transition: all 500ms ease;
+    }
+    h2.surge{
+        top: 0px;
+    }
+    h3, h4, p, a {
+      font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+    }
+    h3{
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 26px;
+        margin: 14px 0;
+    }
+    p, a {
+        font-size: 20px;
+    }
+
+    @media only screen and (max-width: 720px) {
+        body {
+            display: block;
+        }
+
+        #message {
+            box-shadow: none;
+            width: 100%;
+            border-radius: 0; 
+            overflow-y: initial;
+        }
+        
+        img {
+            height: 12.4vw;
+        }
+        h2{
+            font-size: 45.9vw;
+            line-height: 30vw;
+            font-weight: 500;
+            position: relative;
+            top: 260px;
+            transition: all 500ms ease;
+        }
+        h2.surge{
+            top: 0px;
+        }
+        h3{
+            font-size: 40px;
+        }
+        h4 {
+            font-size: 26px;
+            margin: 14px 0;
+        }
+        p, a {
+            font-size: 20px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            setTimeout(function(){
+                document.getElementById("404").className = "surge"
+            }, 250);
+        });
+    </script>
+    <div id="message">
+        <div class="head center-everything">
+            <p style="margin-bottom: 60px;"></h2>
+            <h2 id="404">404</h2>
+        </div>
+        <div style="padding: 30px;">
+            <h3>Página no encontrada.</h3>
+            <h4>No se ha encontrado el archivo al que intentas acceder.</h4>
+            <p>Revisa la dirección o contáctanos a través del email <a href="mailto:admin@pilarbellosillo.es">admin@pilarbellosillo.es</a></p>
+        </div>
+    </div>
+</body>
+</html>
