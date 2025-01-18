@@ -44,17 +44,17 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Source+Sans+Pro|Open+Sans|Raleway|Roboto|Roboto+Mono|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body style="overflow-x: unset">
+<body>
     <div id="top" style="height: 0;display: none"></div>
-    <div id="portada">
+    <div id="portada" class="fullscreen">
         <h2 id="titulo">Pilar Bellosillo</h2>
         <svg class="arrows">
             <path stroke-linecap="round" class="a1" d="M0 0 L30 33 L60 0"></path>
         </svg>
     </div>
-    <div id="navbar">
+    <div class="navbar">
         <a id="n_top" href="#portada">Inicio</a>
-        <a id="n_info" href="#vidaPre">Su vida</a>
+        <a id="n_info" href="#vida">Su vida</a>
         <a id="n_umofc" href="#etapaInter">Con UMOFC</a>
         <a id="n_define" href="#ladefine">Lo que la define</a>
         <a id="n_cont" href="#contacto">Contacto</a>
@@ -62,236 +62,245 @@
         <a href="/blog">Blog</a>
     </div>
     <div class="main">
-        <div id="vidaPre" style="height: 100px;"></div>
-        <div id="vida" class="ancho-centrado">
-            <h4 class="titparte">LA VIDA DE PILAR BELLOSILLO</h4>
-            <div class="crono">
-                <div class="cronoT up" id="comienzosAC" style="grid-row: 1">
-                    <h3>22 de diciembre de 1913</h3>
-                    <p style="font-size: 25px">Nace Pilar Bellosillo García-Verde en Madrid</p>
-                    <p class="texto">
-                        De familia profundamente cristiana, era la segunda de ocho hermanos y recordaba los encuentros familiares en la casa de los abuelos en Derroñadas (Soria), 
-                        donde la compañía familiar y el encuentro con la naturaleza marcaron su vida. En este ambiente también maduró su Fe Cristiana, de la que da testimonio con 
-                        su vida en innumerables escritos.
-                    </p>
-                </div>
-                <div class="cronoL" style="grid-row: 2">
-                    <h3>Estudios universitarios</h3>
-                    <p>Cursó la carrera de Magisterio en la Academia Veritas de la Institución Teresiana (1931-1935).
-                        Allí conoció al padre Poveda. Recibió una formación humana y cristiana que fue decisiva en su vida.<br><br>
-                        También realizó estudios de Asistente Social en la Escuela de Formación Familiar y Social.
-                    </p>
-                </div>
-                <div class="cronoC circulo100"  style="grid-row: 2"></div>
-                <div class="cronoC circulo100"  style="grid-row: 3"></div>
-                <div class="cronoR"  style="grid-row: 3">
-                    <h3>Inicios con Acción Católica</h3>
-                    <p>Comenzó a trabajar como voluntaria en la Academia para Obreras gestionada por la Acción Católica. 
-                        En el año 1938, en plena Guerra Civil, asistió en Zaragoza a un cursillo de dirigentes juveniles que podemos decir que decidió su destino,
-                        porque desde entonces se comprometió definitivamente con Acción Católica, donde ininterrumpidamente desempeñó cargos nacionales.
-                        <br><br>
-                        La familia se trasladó a Madrid donde Pilar vivió, a excepción de largas temporadas, en las que por sus obligaciones internacionales
-                        tuvo que residir en Paris o en Roma.
-                    </p>
-                </div>
-                <div class="cronoL" style="grid-row: 4">
-                    <h3>Comprometida con Acción Católica</h3>
-                    <p>Entró siendo muy joven en la Acción Católica: <q>Nuestra Espiritualidad se inicia muy pronto alimentada 
-                        por fuentes muy ricas: el Evangelio, los místicos castellanos, Teresa de Jesús, Juan de la Cruz...</q>.
-						<br><br>
-                        Pronto fue elegida Presidenta Nacional de las Jóvenes de A.C. (1940-1946) y posteriormente fue Presidenta 
-                        Nacional de la rama de Mujeres de Acción Católica (1951-1963).
-						<br><br>
-                        Durante sus presidencias se vivieron los años más activos y fructíferos de Acción Católica. Se rodeó de 
-                        buenos equipos y en estos años se crearon los planes detallados a continuación:
-                    </p>
-                    
-                    <div class="showhide" id="sh" style="max-height: 0px;">
-                        <ul>
-                            <li><p> Plan de Formación sobre la personalidad de la Mujer (1953-1957), para dar solución a la situación de
-                                la mujer. También pone en funcionamiento los Centros de Cultura Popular, cuya novedad y avance fue 
-                                facilitar a las mujeres centros donde educarse y formarse para la vida social, cultural, cívica, 
-                                política, además de la religiosa. Se pretendía dar una formación integral.
-                            </p></li>
-                            <li><p>Otras de las grandes acciones que impulsó Pilar fue la llamada Semana Impacto, cursillo breve de 
-                                formación social que renovó totalmente a las mujeres de A.C. (1958)
-                            </p></li>
-                            <li><p> La tercera gran acción católica fue lanzar por primera vez la Campaña contra el Hambre, hoy 
-                                Manos Unidas, lo que suponía una apuesta por el Tercer Mundo. Se realizaron las campañas con tal 
-                                rigor, entrega y transparencia, que pronto tuvieron gran repercusión en la Sociedad Española (1960).
-                            </p></li>
-                        </ul>
-                        <p>Estas tres acciones tuvieron repercusión en toda España.
+        <div>
+            <div id="vida" class="navigation-point"></div>  
+            <div class="ancho-centrado">
+                <h4 class="titparte">LA VIDA DE PILAR BELLOSILLO</h4>
+                <div class="crono">
+                    <div class="cronoT up" id="comienzosAC" style="grid-row: 1">
+                        <h3>22 de diciembre de 1913</h3>
+                        <p style="font-size: 25px">Nace Pilar Bellosillo García-Verde en Madrid</p>
+                        <p class="texto">
+                            De familia profundamente cristiana, era la segunda de ocho hermanos y recordaba los encuentros familiares en la casa de los abuelos en Derroñadas (Soria), 
+                            donde la compañía familiar y el encuentro con la naturaleza marcaron su vida. En este ambiente también maduró su Fe Cristiana, de la que da testimonio con 
+                            su vida en innumerables escritos.
                         </p>
                     </div>
-                    <a id="btInfoPlanesAC" class="opuesto centro masinfo">
-                        Ver los planes destacados
-                        <i class="material-icons">expand_more</i>
-                    </a>
-                </div>
-                <div class="cronoC circulo100"  style="grid-row: 4"></div>
-                <div class="cronoR im"  style="grid-row: 4; background-image: url(/img/pb_web.jpg)"></div>
+                    <div class="cronoL" style="grid-row: 2">
+                        <h3>Estudios universitarios</h3>
+                        <p>Cursó la carrera de Magisterio en la Academia Veritas de la Institución Teresiana (1931-1935).
+                            Allí conoció al padre Poveda. Recibió una formación humana y cristiana que fue decisiva en su vida.<br><br>
+                            También realizó estudios de Asistente Social en la Escuela de Formación Familiar y Social.
+                        </p>
+                    </div>
+                    <div class="cronoC circulo100"  style="grid-row: 2"></div>
+                    <div class="cronoC circulo100"  style="grid-row: 3"></div>
+                    <div class="cronoR"  style="grid-row: 3">
+                        <h3>Inicios con Acción Católica</h3>
+                        <p>Comenzó a trabajar como voluntaria en la Academia para Obreras gestionada por la Acción Católica. 
+                            En el año 1938, en plena Guerra Civil, asistió en Zaragoza a un cursillo de dirigentes juveniles que podemos decir que decidió su destino,
+                            porque desde entonces se comprometió definitivamente con Acción Católica, donde ininterrumpidamente desempeñó cargos nacionales.
+                            <br><br>
+                            La familia se trasladó a Madrid donde Pilar vivió, a excepción de largas temporadas, en las que por sus obligaciones internacionales
+                            tuvo que residir en Paris o en Roma.
+                        </p>
+                    </div>
+                    <div class="cronoL" style="grid-row: 4">
+                        <h3>Comprometida con Acción Católica</h3>
+                        <p>Entró siendo muy joven en la Acción Católica: <q>Nuestra Espiritualidad se inicia muy pronto alimentada 
+                            por fuentes muy ricas: el Evangelio, los místicos castellanos, Teresa de Jesús, Juan de la Cruz...</q>.
+                            <br><br>
+                            Pronto fue elegida Presidenta Nacional de las Jóvenes de A.C. (1940-1946) y posteriormente fue Presidenta 
+                            Nacional de la rama de Mujeres de Acción Católica (1951-1963).
+                            <br><br>
+                            Durante sus presidencias se vivieron los años más activos y fructíferos de Acción Católica. Se rodeó de 
+                            buenos equipos y en estos años se crearon los planes detallados a continuación:
+                        </p>
+                        
+                        <div class="showhide" id="sh" style="max-height: 0px;">
+                            <ul>
+                                <li><p> Plan de Formación sobre la personalidad de la Mujer (1953-1957), para dar solución a la situación de
+                                    la mujer. También pone en funcionamiento los Centros de Cultura Popular, cuya novedad y avance fue 
+                                    facilitar a las mujeres centros donde educarse y formarse para la vida social, cultural, cívica, 
+                                    política, además de la religiosa. Se pretendía dar una formación integral.
+                                </p></li>
+                                <li><p>Otras de las grandes acciones que impulsó Pilar fue la llamada Semana Impacto, cursillo breve de 
+                                    formación social que renovó totalmente a las mujeres de A.C. (1958)
+                                </p></li>
+                                <li><p> La tercera gran acción católica fue lanzar por primera vez la Campaña contra el Hambre, hoy 
+                                    Manos Unidas, lo que suponía una apuesta por el Tercer Mundo. Se realizaron las campañas con tal 
+                                    rigor, entrega y transparencia, que pronto tuvieron gran repercusión en la Sociedad Española (1960).
+                                </p></li>
+                            </ul>
+                            <p>Estas tres acciones tuvieron repercusión en toda España.
+                            </p>
+                        </div>
+                        <a href="javascript:void(0)" id="btInfoPlanesAC" class="opuesto centro masinfo">
+                            Ver los planes destacados
+                            <i class="material-icons">expand_more</i>
+                        </a>
+                    </div>
+                    <div class="cronoC circulo100"  style="grid-row: 4"></div>
+                    <div class="cronoR im"  style="grid-row: 4; background-image: url(/img/pb_web.jpg)"></div>
 
-                <div class="cronoT" id="etapaInter" style="grid-row: 5">
-                    <h3>Etapa internacional: Presidenta de la UMOFC</h3>
-                    <p class="texto">
-                        Desde su aportación y experiencia en España, Pilar Bellosillo pasa a la vida internacional cuando en 1961 es elegida
-						presidenta de la Unión Mundial de Organizaciones Femeninas Católicas (UMOFC), cargo que desempeñó hasta 1974. 
-						La UMOFC estaba formada en aquella época por treinta y seis millones de afiliadas, 36 millones de mujeres católicas
-                        de 61 países de los cinco continentes.
-                    </p>
-                </div>
-                <div class="cronoL im"  style="grid-row: 6; background-image: url(/img/UMOFC2.svg); background-size: contain; background-repeat: no-repeat;"></div>	
-                <div class="cronoC circulo100"  style="grid-row: 6"></div>
-				<div class="cronoR" style="grid-row: 6">
-                    <h3>Por la libertad de las mujeres</h3>
-                    <p>Era un momento histórico caracterizado por el comienzo de la toma de conciencia de las mujeres acerca de 
-						su situación de marginación, de discriminación y muchas veces de exclusión. Pilar lo definía así: <br>
-						<q>
-							Nosotras, las mujeres, somos las protagonistas de ese momento histórico, caracterizado por el despertar 
-							de la conciencia femenina en el mundo (1950-1970). Es el momento de nuestra “liberación”. Y para ello, 
-							¡qué posibilidades tan providenciales nos proporciona la UMOFC!
-                        </q>.
-					</p>
-					<p>
-						La UMOFC responde, con Pilar a la cabeza, a este reto, a este desafío. Ya en el postconcilio, en 1966, 
-						se lanzó una gran encuesta sobre “La libertad de la mujer en la familia, en la sociedad y en la Iglesia”, 
-						y se envió a todas las organizaciones miembros de la UMOFC para que fuera contestada por los 36 millones 
-						de mujeres católicas afiliadas.
-					</p>
-					<p>
-						Las contestaciones fueron de un gran valor representativo, por el elevado número de respuestas y por el 
-						pluralismo de las mismas: mujeres de todas las razas, de diferentes culturas y costumbres, y de diversas 
-						clases sociales y económicas. “Las respuestas - dice Pilar - revelaron realidades y situaciones sorprendentes”.
-					</p>
-					<p>
-						Estos hechos sensibilizaron fuertemente a la UMOFC y a partir de allí surgió un plan de acción orientado 
-						a hacer evolucionar estas situaciones inhumanas. Se iniciaron trabajos, coloquios, conferencias, 
-						investigaciones, reuniones de estudio, consultas a expertos, etc.
-					</p>
-					<p>
-						Como resultado de trabajos e investigaciones la UMOFC establece las líneas de fuerza de un feminismo humanista.
-                    </p>
-                </div>
-                <div class="cronoL" style="grid-row: 7">
-                    <h3>“La educación de las mujeres”</h3>
-                    <p>
-						En 1970 elabora y estudia, en la Asamblea de Torhout (Bélgica), con todas las Organizaciones, un gran plan de 
-						educación como proceso de liberación con el tema 
-						<q><b>LA EDUCACIÓN DE LAS MUJERES</b></q>
-						para los siguientes cuatro años, eligiendo para ello una metodología activa, participativa, que diera 
-						oportunidad a las mujeres a aportar sus propias ideas, su visión de los temas a estudiar y su propio 
-						criterio sobre los asuntos a tratar.
-					</p>
-                </div>
-                <div class="cronoC circulo100"  style="grid-row: 7"></div>
-                <div class="cronoC circulo100"  style="grid-row: 8"></div>
-                <div class="cronoR"  style="grid-row: 8">
-                    <h3>Trabajando contra la injusticia y la marginación</h3>
-                    <p>Otro compromiso que Pilar asumió personalmente e impulsó en la UMOFC fue el de ampliar sus objetivos y trabajar 
-						por los pueblos del Tercer Mundo, por los pueblos de subdesarrollo, del hambre, de la pobreza: pueblos que 
-						padecen injusticia, marginación y que son oprimidos por los poderosos.
-					</p>
-					<p>
-						Un paso importante fue la organización de la Asamblea Estatutaria y las Jornadas de Estudio del año 1974 por 
-						primera vez fuera de Europa para celebrarlas en Dar Es-Salaam (Tanzania), sobre el tema 
-						<q>
-							LA UMOFC, UN AGENTE PARA EL CAMBIO PARA UNA SOCIEDAD MÁS JUSTA
-                        </q>. 
-						En esta asamblea acudieron más de 500 mujeres africanas, lo que fue muy enriquecedor para ellas y tanto o 
-						más para las que procedíamos de la civilización occidental.
-					</p>
-					<p>
-						La siguiente Asamblea se celebró en Bangalore (India) en el año 1979 sobre 
-						<q>
-							MUJERES, JUSTICIA, EVANGELIZACIÓN
-                        </q>. 
-						La madre Teresa de Calcuta estuvo presente y dio una conferencia en esta Asamblea.
-					</p>
-					<p>
-						Hasta 1974 en que dejó esta responsabilidad, Pilar dejó su huella, ayudada por otras mujeres, alguna de ellas 
-						españolas: aportó dinamismo, vitalidad y proyecto de cambio, exigidos en la época al servicio de las mujeres 
-						y de la UMOFC.
-					</p>
-                </div>
-				<div class="cronoL" style="grid-row: 9">
-                    <h3>Auditora del Concilio Vaticano II</h3>
-                    <p>
-						Siendo presidenta de la UMOFC, Pilar fue nombrada Auditora del Concilio Vaticano II por el Papa Pablo VI, 
-						junto con 22 mujeres más, para formar parte del grupo de Auditores. Entre ellas, Pilar fue la única laica 
-						española. Este hecho se producía por primera vez en la historia de la Iglesia. Pilar se incorporó a la Comisión
-						Encargada de elaborar el esquema XIII de preparación de la Constitución Pastoral “Gaudium et spes” que sería
-						la constitución pastoral sobre la Iglesia en el mundo actual.
-					</p><p>
-						Pilar Bellosillo cuenta cómo vivió el Concilio: «Lo viví “vitalmente”, me lancé a la aventura de seguir al 
-						Espíritu, de dejarme conducir por Él; plenamente convencida de que era “su hora” para la Iglesia, y para 
-                        avanzar en el camino, era necesario profundizar. Eso lo tenía yo muy claro. Ya dentro de la intensa actividad 
-                        conciliar pasé noches en vela y descubría cómo, “trabajada por el Espíritu”, se iba ordenando el caudal que 
-                        recibíamos. Esto me exigía, a veces, el despojarme de algo para acoger lo “nuevo”. 
-						En ocasiones, era cuestión de ordenarlo con una nueva jerarquía de valores. El asombro de ir descubriendo la 
-						maravillosa claridad, coherencia de la obra de Dios, es indescriptible la luz, el gozo, el equilibrio, el 
-						orden, la paz y un amor renovado, son los frutos que va produciendo la verdad poseída. Era evidente que la 
-						Iglesia se veía cuestionada por un montón de interrogantes nuevos que se planteaban a la conciencia de los 
-						bautizados. Y dar las mismas respuestas no conducía a nada.»
-					</p><p>
-						Después de clausurado el Concilio, hubo un coloquio con cuatro auditoras. A cada una se le hizo una pregunta 
-						concreta. A Pilar le preguntaron cuál había sido la contribución de la mujer a las labores del Concilio. 
-						Pilar contestó que su mayor preocupación había sido la de evitar toda discriminación con respecto a la mujer.
-					</p>
-                </div>
-                <div class="cronoC circulo100"  style="grid-row: 9"></div>
-                <div class="cronoR im"  style="grid-row: 9; background-image: url(/img/pb_color.jpg)"></div>
-                <div class="cronoT down" style="grid-row: 10">
-                    <h3>2 de enero de 2003</h3>
-                    <p style="font-size: 25px">Fallece Pilar Bellosillo en Madrid</p>
+                    <div class="cronoT" style="grid-row: 5">
+                        <div class="navigation-point" id="etapaInter"></div>
+                        <h3>Etapa internacional: Presidenta de la UMOFC</h3>
+                        <p class="texto">
+                            Desde su aportación y experiencia en España, Pilar Bellosillo pasa a la vida internacional cuando en 1961 es elegida
+                            presidenta de la Unión Mundial de Organizaciones Femeninas Católicas (UMOFC), cargo que desempeñó hasta 1974. 
+                            La UMOFC estaba formada en aquella época por treinta y seis millones de afiliadas, 36 millones de mujeres católicas
+                            de 61 países de los cinco continentes.
+                        </p>
+                    </div>
+                    <div class="cronoL im"  style="grid-row: 6; background-image: url(/img/UMOFC2.svg); background-size: contain; background-repeat: no-repeat;"></div>	
+                    <div class="cronoC circulo100"  style="grid-row: 6"></div>
+                    <div class="cronoR" style="grid-row: 6">
+                        <h3>Por la libertad de las mujeres</h3>
+                        <p>Era un momento histórico caracterizado por el comienzo de la toma de conciencia de las mujeres acerca de 
+                            su situación de marginación, de discriminación y muchas veces de exclusión. Pilar lo definía así: <br>
+                            <q>
+                                Nosotras, las mujeres, somos las protagonistas de ese momento histórico, caracterizado por el despertar 
+                                de la conciencia femenina en el mundo (1950-1970). Es el momento de nuestra “liberación”. Y para ello, 
+                                ¡qué posibilidades tan providenciales nos proporciona la UMOFC!
+                            </q>.
+                        </p>
+                        <p>
+                            La UMOFC responde, con Pilar a la cabeza, a este reto, a este desafío. Ya en el postconcilio, en 1966, 
+                            se lanzó una gran encuesta sobre “La libertad de la mujer en la familia, en la sociedad y en la Iglesia”, 
+                            y se envió a todas las organizaciones miembros de la UMOFC para que fuera contestada por los 36 millones 
+                            de mujeres católicas afiliadas.
+                        </p>
+                        <p>
+                            Las contestaciones fueron de un gran valor representativo, por el elevado número de respuestas y por el 
+                            pluralismo de las mismas: mujeres de todas las razas, de diferentes culturas y costumbres, y de diversas 
+                            clases sociales y económicas. “Las respuestas - dice Pilar - revelaron realidades y situaciones sorprendentes”.
+                        </p>
+                        <p>
+                            Estos hechos sensibilizaron fuertemente a la UMOFC y a partir de allí surgió un plan de acción orientado 
+                            a hacer evolucionar estas situaciones inhumanas. Se iniciaron trabajos, coloquios, conferencias, 
+                            investigaciones, reuniones de estudio, consultas a expertos, etc.
+                        </p>
+                        <p>
+                            Como resultado de trabajos e investigaciones la UMOFC establece las líneas de fuerza de un feminismo humanista.
+                        </p>
+                    </div>
+                    <div class="cronoL" style="grid-row: 7">
+                        <h3>“La educación de las mujeres”</h3>
+                        <p>
+                            En 1970 elabora y estudia, en la Asamblea de Torhout (Bélgica), con todas las Organizaciones, un gran plan de 
+                            educación como proceso de liberación con el tema 
+                            <q><b>LA EDUCACIÓN DE LAS MUJERES</b></q>
+                            para los siguientes cuatro años, eligiendo para ello una metodología activa, participativa, que diera 
+                            oportunidad a las mujeres a aportar sus propias ideas, su visión de los temas a estudiar y su propio 
+                            criterio sobre los asuntos a tratar.
+                        </p>
+                    </div>
+                    <div class="cronoC circulo100"  style="grid-row: 7"></div>
+                    <div class="cronoC circulo100"  style="grid-row: 8"></div>
+                    <div class="cronoR"  style="grid-row: 8">
+                        <h3>Trabajando contra la injusticia y la marginación</h3>
+                        <p>Otro compromiso que Pilar asumió personalmente e impulsó en la UMOFC fue el de ampliar sus objetivos y trabajar 
+                            por los pueblos del Tercer Mundo, por los pueblos de subdesarrollo, del hambre, de la pobreza: pueblos que 
+                            padecen injusticia, marginación y que son oprimidos por los poderosos.
+                        </p>
+                        <p>
+                            Un paso importante fue la organización de la Asamblea Estatutaria y las Jornadas de Estudio del año 1974 por 
+                            primera vez fuera de Europa para celebrarlas en Dar Es-Salaam (Tanzania), sobre el tema 
+                            <q>
+                                LA UMOFC, UN AGENTE PARA EL CAMBIO PARA UNA SOCIEDAD MÁS JUSTA
+                            </q>. 
+                            En esta asamblea acudieron más de 500 mujeres africanas, lo que fue muy enriquecedor para ellas y tanto o 
+                            más para las que procedíamos de la civilización occidental.
+                        </p>
+                        <p>
+                            La siguiente Asamblea se celebró en Bangalore (India) en el año 1979 sobre 
+                            <q>
+                                MUJERES, JUSTICIA, EVANGELIZACIÓN
+                            </q>. 
+                            La madre Teresa de Calcuta estuvo presente y dio una conferencia en esta Asamblea.
+                        </p>
+                        <p>
+                            Hasta 1974 en que dejó esta responsabilidad, Pilar dejó su huella, ayudada por otras mujeres, alguna de ellas 
+                            españolas: aportó dinamismo, vitalidad y proyecto de cambio, exigidos en la época al servicio de las mujeres 
+                            y de la UMOFC.
+                        </p>
+                    </div>
+                    <div class="cronoL" style="grid-row: 9">
+                        <h3>Auditora del Concilio Vaticano II</h3>
+                        <p>
+                            Siendo presidenta de la UMOFC, Pilar fue nombrada Auditora del Concilio Vaticano II por el Papa Pablo VI, 
+                            junto con 22 mujeres más, para formar parte del grupo de Auditores. Entre ellas, Pilar fue la única laica 
+                            española. Este hecho se producía por primera vez en la historia de la Iglesia. Pilar se incorporó a la Comisión
+                            Encargada de elaborar el esquema XIII de preparación de la Constitución Pastoral “Gaudium et spes” que sería
+                            la constitución pastoral sobre la Iglesia en el mundo actual.
+                        </p><p>
+                            Pilar Bellosillo cuenta cómo vivió el Concilio: «Lo viví “vitalmente”, me lancé a la aventura de seguir al 
+                            Espíritu, de dejarme conducir por Él; plenamente convencida de que era “su hora” para la Iglesia, y para 
+                            avanzar en el camino, era necesario profundizar. Eso lo tenía yo muy claro. Ya dentro de la intensa actividad 
+                            conciliar pasé noches en vela y descubría cómo, “trabajada por el Espíritu”, se iba ordenando el caudal que 
+                            recibíamos. Esto me exigía, a veces, el despojarme de algo para acoger lo “nuevo”. 
+                            En ocasiones, era cuestión de ordenarlo con una nueva jerarquía de valores. El asombro de ir descubriendo la 
+                            maravillosa claridad, coherencia de la obra de Dios, es indescriptible la luz, el gozo, el equilibrio, el 
+                            orden, la paz y un amor renovado, son los frutos que va produciendo la verdad poseída. Era evidente que la 
+                            Iglesia se veía cuestionada por un montón de interrogantes nuevos que se planteaban a la conciencia de los 
+                            bautizados. Y dar las mismas respuestas no conducía a nada.»
+                        </p><p>
+                            Después de clausurado el Concilio, hubo un coloquio con cuatro auditoras. A cada una se le hizo una pregunta 
+                            concreta. A Pilar le preguntaron cuál había sido la contribución de la mujer a las labores del Concilio. 
+                            Pilar contestó que su mayor preocupación había sido la de evitar toda discriminación con respecto a la mujer.
+                        </p>
+                    </div>
+                    <div class="cronoC circulo100"  style="grid-row: 9"></div>
+                    <div class="cronoR im"  style="grid-row: 9; background-image: url(/img/pb_color.jpg)"></div>
+                    <div class="cronoT down" style="grid-row: 10">
+                        <h3>2 de enero de 2003</h3>
+                        <p style="font-size: 25px">Fallece Pilar Bellosillo en Madrid</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="ladefine">
-            <h4 class="titparte">LO QUE DEFINE A PILAR</h4> 
-            <p>Dice Pilar: “Todo lo que he vivido en la Iglesia ha constituido para mí una permanente fuente de riqueza. Descubro, siendo muy joven, que mi fe no es un 
-                privilegio para mí sola sino una gracia que debo compartir y si estoy en la Iglesia no es solo para beneficiarme de ella, sino para ponerme a su servicio”.
-            </p><p>
-                Pilar fue una mujer de Iglesia. Apóstol por compromiso. Una cristiana Laica por vocación.  Profeta del Siglo XX. 
-            </p><p>
-                Pilar nos ha dejado escrito el momento en que adquiere el compromiso de dedicarse al apostolado: “La Guerra Civil fue para cuantos la vivimos una 
-                experiencia muy dura, una vez termina había mucho que reconstruir; es el momento en que tomo el compromiso de dedicarme al apostolado. Compromiso 
-                que va a durar toda mi vida. Es el comienzo de mi aventura personal y apasionante que aún no se ha detenido”.
-            </p><p>
-                Pilar, desde joven, dedicó su vida y pasión apostólica a luchar por la promoción de la mujer, por su dignidad y sobre todo por su libertad. Su apostolado
-                no es algo rutinario, superficial... Ella ama a los “otros” y así lo expresa: “Mi gran vocación se va dibujando progresivamente; será la de estar al servicio
-                de los otros, al servicio de su realización como personas y como cristianos. Estar al servicio de los designios de Dios en el mundo... encargarse de la 
-                historia de la causa de Dios. He aquí la inaudita vocación del cristiano”.
-            </p><p>
-                Vivió su profunda fe, su entrega y fidelidad a la Iglesia y su amor a Jesucristo desde su condición de laica. Decía Pilar: “No se trataba de entrar en un 
-                Instituto religioso, no era esa mi vocación; sino de vivir mi bautismo, que es la “fuente” de esta vida maravillosa. Por el bautismo yo he entrado en la 
-                familia de Dios. No se puede añadir nada a esta “grandeza”. He entrado en su Iglesia. Poco a poco se irá “iluminando” esta vocación de “Cristiana laica”. 
-            </p><p>
-                Pilar fue profeta porque inspirada por el Espíritu y Fortalecida por su fe transmitía el mensaje de Jesucristo y sus propias vivencias religiosas con 
-                espontaneidad y convicción. Profeta porque fue una mujer pionera, adelantada de su tiempo. Y fue profeta porque aportó a la Iglesia conversión, renovación 
-                y progreso, y quiso abrir ventanas para que entrara “aire fresco” como dijo Juan XXIII.
-            </p><p>
-                Dice Pilar “Tengo conciencia de haber hecho un largo camino, yendo siempre hacia adelante y puedo identificar a Jesucristo en mi propio “Éxodo” hacia 
-                la tierra de libertad, de dignidad y de justicia”.
-            </p><p>
-                Pilar fue una mujer muy avanzada en su tiempo. A lo largo de su vida participó activamente en la construcción de un mundo mejor, en la promoción de la 
-                mujer y en la renovación de la Iglesia. Fue motor de cambio y de progreso en la sociedad y en la Iglesia, un modelo a imitar y un ejemplo a seguir.
-            </p>
-        </div>
-        <div id="contacto">
-            <h2 style="padding: 20px">Contacta con nosotros</h2>
-            <div style="display: flex; margin-top: 10px">
-                <form action="https://formspree.io/bellosillopilar@gmail.com" method="POST">
-                    <input type="text" name="name" placeholder="Nombre *" required="">
-                    <input type="email" name="_replyto" placeholder="Correo electrónico *" required="">
-                    <input type="tel" name="telf" placeholder="Teléfono">                       
-                    <input type="text" name="titulo" placeholder="Título *" required="">
-                    <textarea name="texto" placeholder="Mensaje *" required=""></textarea>
-                    <input type="text" name="_gotcha" style="display:none">
-                    <input type="submit" value="Enviar">
-                </form>
+        <div class="ancho-centrado">
+            <div class="navigation-point" id="ladefine"></div>
+            <div>
+                <h4 class="titparte">LO QUE DEFINE A PILAR</h4> 
+                <p>Dice Pilar: “Todo lo que he vivido en la Iglesia ha constituido para mí una permanente fuente de riqueza. Descubro, siendo muy joven, que mi fe no es un 
+                    privilegio para mí sola sino una gracia que debo compartir y si estoy en la Iglesia no es solo para beneficiarme de ella, sino para ponerme a su servicio”.
+                </p><p>
+                    Pilar fue una mujer de Iglesia. Apóstol por compromiso. Una cristiana Laica por vocación.  Profeta del Siglo XX. 
+                </p><p>
+                    Pilar nos ha dejado escrito el momento en que adquiere el compromiso de dedicarse al apostolado: “La Guerra Civil fue para cuantos la vivimos una 
+                    experiencia muy dura, una vez termina había mucho que reconstruir; es el momento en que tomo el compromiso de dedicarme al apostolado. Compromiso 
+                    que va a durar toda mi vida. Es el comienzo de mi aventura personal y apasionante que aún no se ha detenido”.
+                </p><p>
+                    Pilar, desde joven, dedicó su vida y pasión apostólica a luchar por la promoción de la mujer, por su dignidad y sobre todo por su libertad. Su apostolado
+                    no es algo rutinario, superficial... Ella ama a los “otros” y así lo expresa: “Mi gran vocación se va dibujando progresivamente; será la de estar al servicio
+                    de los otros, al servicio de su realización como personas y como cristianos. Estar al servicio de los designios de Dios en el mundo... encargarse de la 
+                    historia de la causa de Dios. He aquí la inaudita vocación del cristiano”.
+                </p><p>
+                    Vivió su profunda fe, su entrega y fidelidad a la Iglesia y su amor a Jesucristo desde su condición de laica. Decía Pilar: “No se trataba de entrar en un 
+                    Instituto religioso, no era esa mi vocación; sino de vivir mi bautismo, que es la “fuente” de esta vida maravillosa. Por el bautismo yo he entrado en la 
+                    familia de Dios. No se puede añadir nada a esta “grandeza”. He entrado en su Iglesia. Poco a poco se irá “iluminando” esta vocación de “Cristiana laica”. 
+                </p><p>
+                    Pilar fue profeta porque inspirada por el Espíritu y Fortalecida por su fe transmitía el mensaje de Jesucristo y sus propias vivencias religiosas con 
+                    espontaneidad y convicción. Profeta porque fue una mujer pionera, adelantada de su tiempo. Y fue profeta porque aportó a la Iglesia conversión, renovación 
+                    y progreso, y quiso abrir ventanas para que entrara “aire fresco” como dijo Juan XXIII.
+                </p><p>
+                    Dice Pilar “Tengo conciencia de haber hecho un largo camino, yendo siempre hacia adelante y puedo identificar a Jesucristo en mi propio “Éxodo” hacia 
+                    la tierra de libertad, de dignidad y de justicia”.
+                </p><p>
+                    Pilar fue una mujer muy avanzada en su tiempo. A lo largo de su vida participó activamente en la construcción de un mundo mejor, en la promoción de la 
+                    mujer y en la renovación de la Iglesia. Fue motor de cambio y de progreso en la sociedad y en la Iglesia, un modelo a imitar y un ejemplo a seguir.
+                </p>
             </div>
-            <p style="font-size: larger; padding: 20px 0">O envíanos un email a<a id="mail_contacto" href="mailto:bellosillopilar@gmail.com">bellosillopilar@gmail.com</a></p>
+        </div>
+        <div>
+            <div id="contacto" class="navigation-point"></div>
+            <div class="contacto">
+                <h2>Contacta con nosotros</h2>
+                <div>
+                    <form action="https://formspree.io/bellosillopilar@gmail.com" method="POST">
+                        <input type="text" name="name" placeholder="Nombre *" required="">
+                        <input type="email" name="_replyto" placeholder="Correo electrónico *" required="">
+                        <input type="tel" name="telf" placeholder="Teléfono">                       
+                        <input type="text" name="titulo" placeholder="Título *" required="">
+                        <textarea name="texto" placeholder="Mensaje *" required=""></textarea>
+                        <input type="text" name="_gotcha" style="display:none">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+                <p>O envíanos un email a<a id="mail_contacto" href="mailto:bellosillopilar@gmail.com">bellosillopilar@gmail.com</a></p>
+            </div>
         </div>
     </div>
     <footer>
